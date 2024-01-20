@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     // Create an array of 100 country names
     String[] CountryName = {"Cambodia", "Thailand", "Laos", "Vietnam", "Malaysia", "Philipine", };
     String[] detail = {"This is Cambodia", "This is Thailand", "This is Laos", "This is Vietnam", "This is Malaysia", "This is Philipine",};
-
+     int[] img=new int[]{R.drawable.cambodia};
     ListView lvCountry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
