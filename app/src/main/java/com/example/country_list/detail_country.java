@@ -21,12 +21,16 @@ TextView title,detail;
         detail=(TextView) findViewById(R.id.detail);
 
         Intent getData=getIntent();
+        //declare
         String countryName,strDetail;
+        int img;
         countryName=getData.getStringExtra("countryName");
         strDetail=getData.getStringExtra("detail");
+        img=getData.getIntExtra("img",0);
 
+        //set
         title.setText("Welcome to "+countryName);
         detail.setText(strDetail);
-
+        imgCountry.setImageDrawable(getDrawable(img));
     }
 }

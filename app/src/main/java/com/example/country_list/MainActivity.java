@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     // Create an array of 100 country names
     String[] CountryName = {"Cambodia", "Thailand", "Laos", "Vietnam", "Malaysia", "Philipine", };
     String[] detail = {"This is Cambodia", "This is Thailand", "This is Laos", "This is Vietnam", "This is Malaysia", "This is Philipine",};
-     int[] img=new int[]{R.drawable.cambodia};
+     int[] img={R.drawable.cambodia,R.drawable.thailand,R.drawable.laos,R.drawable.vietnam,R.drawable.malaysia,R.drawable.philipine};
     ListView lvCountry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,detail_country.class);
                 intent.putExtra("countryName",str);
                 intent.putExtra("detail",detail[i]);
+                intent.putExtra("img",img[i]);
+
                 startActivity(intent);
             }
 
